@@ -114,4 +114,22 @@ footer ul li a {
     color: rgba(0 , 0 , 0, 0.623);
 }
 
+@media (max-width: 915px) {
+    .stock-container .background {
+      width: 100%;
+      margin: 10px;
+      border-radius: 10px;
+    }
+    .stock-container .form-container {
+      width: 100%;
+      margin: 10px;
+      border-radius: 10px;
+    }
+    .container {
+      padding: 10px 0;
+    }
+    .footer{
+        padding: 30px 0;
+    }
+  }
 
