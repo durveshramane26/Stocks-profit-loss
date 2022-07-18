@@ -7,7 +7,7 @@ form.addEventListener("submit", (e)=> {
     //collection prices
 
     let purchasePrice = Number(priceInputs[0].value);
-    let stockQuantity = Number(priceInput[1].value);
+    let stockQuantity = Number(priceInputs[1].value);
     let currentPrice = Number(priceInputs[2].value);
 
     // console.log(purchasePrice, stockQuantity, currentPrice)

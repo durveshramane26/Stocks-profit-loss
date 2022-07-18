@@ -84,6 +84,18 @@
     border-bottom-right-radius: 10px;
 }
 
+.output {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.loss-info {
+    padding: 20px;
+    background-color: #28308da4;
+    width: 90%;
+    color: #fff;
+}
 
 
 footer {
