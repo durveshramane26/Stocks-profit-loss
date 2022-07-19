@@ -18,7 +18,7 @@ form.addEventListener("submit", (e)=> {
 
             const totalLoss = ((purchasePrice - currentPrice) * stockQuantity).toFixed(2);
 
-            const lossPerce = ((purchasePrice - currentPrice * 100)/ purchasePrice.toFixed(2));
+            const lossPerce = (((purchasePrice - currentPrice) * 100) / purchasePrice.toFixed(2));
 
             if(lossPerce > 0) {
                 document.querySelector(".background").style.backgroundImage = "url('./gif2.webp')";
@@ -26,10 +26,11 @@ form.addEventListener("submit", (e)=> {
                 document.querySelector(".background").style.backgroundPosition = "center";
             }
 
-            var losses = ""
-            losses = `<div class="loss-info>
+            var losses = "";
+            losses = `
+                    <div class="loss-info>
                         <p> You Lost ${lossPerce}%, and Your total loss is ₹${totalLoss}</p>
-                      </div>
+                    </div>
                     `;
             document.querySelector(".output").innerHTML = losses;
         }
