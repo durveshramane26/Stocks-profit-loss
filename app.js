@@ -26,7 +26,7 @@ form.addEventListener("submit", (e)=> {
                 document.querySelector(".background").style.backgroundPosition = "center";
             }
 
-            var losses = "";
+            var losses ="";
             losses = `
                     <div class="loss-info>
                         <p> You Lost ${lossPerce}%, and Your total loss is ₹${totalLoss}</p>
